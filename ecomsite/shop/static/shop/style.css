@@ -1,18 +1,18 @@
-.card{
-    background-color:beige;
+.card {
+  background-color: beige;
 }
-.card-text{
-    color:green;
-    font-weight: 800;
+.card-text {
+  color: green;
+  font-weight: 800;
 }
-body{
-    background-color:azure;
+body {
+  background-color: azure;
 }
-.card-title{
-    color: black;
-    font-weight: lighter;
-    font-weight: bold;
+.card-title {
+  color: black;
+  font-weight: lighter;
+  font-weight: bold;
 }
-.pagination{
-    margin-top: 100px;
+.pagination {
+  margin-top: 100px;
 }

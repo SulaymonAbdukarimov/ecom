@@ -23,7 +23,7 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     actions = ('change_category_to_default',)
     actions = ('change_category_to_number',)
-    fields = ('title','price',   )
+    # fields = ('title','price',   )
     list_editable = ('price','category',)
 
 admin.site.register(Products,ProductAdmin)

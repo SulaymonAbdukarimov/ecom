@@ -74,8 +74,8 @@
     <div class="row">
       {% for product in product_objects %}
       <div class="col-md-3">
-        <div class="card">
-          <img src="{{ product.image }}" class="card-img-top" />
+        <div style="height: 450px;" class="card main-image1">
+          <div style="background: url({{product.image}}); background-size: cover; height: 60%"></div>
           <div class="card-body">
             <div id="nm{{ product.id}}" class="card-title">
               {{ product.title}}

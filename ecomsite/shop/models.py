@@ -3,12 +3,12 @@ from django.db import models
 # Create your models here.
 # Product model which you see in official page
 class Products(models.Model):
-    title = models.CharField(max_length=200)
-    price = models.FloatField()
-    discount_price = models.FloatField()
-    category = models.CharField(max_length=200)
-    description = models.TextField()
-    image = models.CharField(max_length=300)
+    title = models.CharField(max_length=200,null=True)
+    price = models.FloatField(null=True)
+    discount_price = models.FloatField(null=True)
+    category = models.CharField(max_length=200,null=True)
+    description = models.TextField(null=True)
+    image = models.CharField(max_length=300,null=True)
 
     def __str__(self):
         return self.title
@@ -22,4 +22,3 @@ class Order(models.Model):
     state = models.CharField(max_length=200)
     zipcode = models.CharField(max_length=200)
     total = models.FloatField()
-    
